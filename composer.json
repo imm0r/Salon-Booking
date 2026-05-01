@@ -1,0 +1,15 @@
+{
+  "name": "salon-booking/plugin",
+  "description": "WordPress plugin for salon appointment booking.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "classmap": [
+      "includes/"
+    ]
+  },
+  "minimum-stability": "stable",
+  "license": "GPL-2.0-or-later"
+}

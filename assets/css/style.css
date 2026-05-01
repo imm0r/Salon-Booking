@@ -1,0 +1,41 @@
+#salon-booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+}
+
+#salon-booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#salon-booking-form input,
+#salon-booking-form select,
+#salon-booking-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#salon-booking-form button {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    padding: 0.85rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#salon-booking-form button:hover {
+    background-color: #006799;
+}
+
+#salon-booking-message {
+    margin-top: 1rem;
+}

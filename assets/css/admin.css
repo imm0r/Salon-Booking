@@ -1,0 +1,27 @@
+body.wp-admin .wrap {
+    max-width: 1200px;
+}
+
+#salon-booking-calendar {
+    margin-bottom: 1.5rem;
+}
+
+.salon-booking-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.salon-booking-table th,
+.salon-booking-table td {
+    padding: 12px 10px;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+}
+
+.salon-booking-table th {
+    background-color: #f1f1f1;
+}
+
+.salon-booking-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
