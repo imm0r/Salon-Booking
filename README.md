@@ -1,4 +1,11 @@
-# Salon Booking Plugin
+<div align="center">
+  <img src="assets/svg.png" width="600">
+  
+  ![Version](https://img.shields.io/badge/version-v0.1.31.7-blue)
+  ![Build](https://img.shields.io/badge/build-stable-green)
+  ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+  ![Language](https://img.shields.io/badge/language-JavaScript-orange)
+</div>
 
 Ein WordPress-Plugin zur Online-Terminbuchung für einen Frisörsalon.
 
