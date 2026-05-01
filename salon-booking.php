@@ -1,33 +1,35 @@
-<?php
+<?php /**
+
+Plugin Name: Salon Booking
+
+Description: Online-Terminbuchung für einen Frisörsalon.
+
+Version: 0.1.0
+
+Author: Benjamin
+
+Text Domain: salon-booking */
+
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+
 /**
- * Plugin Name: Salon Booking
- * Description: Online-Terminbuchungs System für Ayla's-HAARmonie.
- * Version: 0.1.0
- * Author: Benjamin Reimer
- * Text Domain: salon-booking
- */
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit;
-}
+Plugin Konstanten */ define( 'SALON_BOOKING_VERSION', '0.1.0' ); define( 'SALON_BOOKING_PLUGIN_DIR', plugin_dir_path( FILE ) ); define( 'SALON_BOOKING_PLUGIN_URL', plugin_dir_url( FILE ) );
 
-define( 'SALON_BOOKING_VERSION', '0.1.0' );
-define( 'SALON_BOOKING_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'SALON_BOOKING_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+/**
 
-if ( file_exists( SALON_BOOKING_PLUGIN_DIR . 'vendor/autoload.php' ) ) {
-    require_once SALON_BOOKING_PLUGIN_DIR . 'vendor/autoload.php';
-}
+Autoloader (falls Composer genutzt wird) */ $autoload = SALON_BOOKING_PLUGIN_DIR . 'vendor/autoload.php'; if ( file_exists( $autoload ) ) { require_once $autoload; }
 
-require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking-activator.php';
-require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking-deactivator.php';
-require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking.php';
+/**
 
-register_activation_hook( __FILE__, array( 'Salon_Booking_Activator', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Salon_Booking_Deactivator', 'deactivate' ) );
+Plugin-Klassen laden */ require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking-activator.php'; require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking-deactivator.php'; require_once SALON_BOOKING_PLUGIN_DIR . 'includes/class-salon-booking.php';
 
-function run_salon_booking() {
-    $plugin = new Salon_Booking();
-    $plugin->run();
-}
-run_salon_booking();
+/**
+
+Aktivierung / Deaktivierung */ register_activation_hook( FILE, array( 'Salon_Booking_Activator', 'activate' ) );
+
+register_deactivation_hook( FILE, array( 'Salon_Booking_Deactivator', 'deactivate' ) );
+
+/**
+
+Plugin starten */ function run_salon_booking() { $plugin = new Salon_Booking(); $plugin->run(); } run_salon_booking();
