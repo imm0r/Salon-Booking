@@ -13,7 +13,9 @@ class ComposerStaticInitd2e8e8c380439657a70a15e827903c72
         'Salon_Booking_Admin' => __DIR__ . '/../..' . '/includes/class-salon-booking-admin.php',
         'Salon_Booking_Calendar' => __DIR__ . '/../..' . '/includes/class-salon-booking-calendar.php',
         'Salon_Booking_Deactivator' => __DIR__ . '/../..' . '/includes/class-salon-booking-deactivator.php',
+        'Salon_Booking_Payment' => __DIR__ . '/../..' . '/includes/class-salon-booking-payment.php',
         'Salon_Booking_Public' => __DIR__ . '/../..' . '/includes/class-salon-booking-public.php',
+        'Salon_Booking_Reminder' => __DIR__ . '/../..' . '/includes/class-salon-booking-reminder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

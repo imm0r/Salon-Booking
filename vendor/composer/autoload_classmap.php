@@ -12,5 +12,7 @@ return array(
     'Salon_Booking_Admin' => $baseDir . '/includes/class-salon-booking-admin.php',
     'Salon_Booking_Calendar' => $baseDir . '/includes/class-salon-booking-calendar.php',
     'Salon_Booking_Deactivator' => $baseDir . '/includes/class-salon-booking-deactivator.php',
+    'Salon_Booking_Payment' => $baseDir . '/includes/class-salon-booking-payment.php',
     'Salon_Booking_Public' => $baseDir . '/includes/class-salon-booking-public.php',
+    'Salon_Booking_Reminder' => $baseDir . '/includes/class-salon-booking-reminder.php',
 );
