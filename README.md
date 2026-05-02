@@ -7,7 +7,7 @@
   ![Language](https://img.shields.io/badge/language-JavaScript-orange)
 </div>
 
-Ein WordPress-Plugin zur Online-Terminbuchung für den Friseur Salon [Ayla's-HAARmonie](https://www.alays-haarmonie.com).
+Ein WordPress-Plugin zur Online-Terminbuchung für den Friseur Salon [Ayla's-HAARmonie](https://www.aylas-haarmonie.com).
 
 ## Installation
 
